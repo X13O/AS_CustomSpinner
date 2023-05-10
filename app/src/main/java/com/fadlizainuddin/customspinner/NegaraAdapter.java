@@ -11,12 +11,12 @@ import android.widget.TextView;
 import java.util.List;
 
 public class NegaraAdapter extends BaseAdapter {
-    private Context _contex;
+    private Context _context;
     private List<String> _negaraList;
 
-    public NegaraAdapter(Context _contex, List<String> _negaraList) {
-        this._contex = _contex;
-        this._negaraList = _negaraList;
+    public NegaraAdapter(Context context, List<String> negaraList) {
+        this._context = context;
+        this._negaraList = negaraList;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class NegaraAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        LayoutInflater inflater = LayoutInflater.from(_contex);
+        LayoutInflater inflater = LayoutInflater.from(_context);
         view = inflater.inflate(R.layout.spinner_a,null);
 
         TextView textView = view.findViewById(R.id.textView);
